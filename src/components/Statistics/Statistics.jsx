@@ -8,6 +8,7 @@ export const Statistics = ({ good, neutral, bad, total, positivePercentage }) =>
   return total === 0 ? (
     <>
     <GiCoffeeCup size={50} color="brown" />
+    
       <Notification message="There is no feedback" />
     </>
   ) : (
