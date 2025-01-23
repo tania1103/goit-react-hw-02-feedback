@@ -2,9 +2,12 @@ import {Notification} from '../Notification/Notification';
 import css from './Statistics.module.css';
 import PropTypes from 'prop-types';
 
+import { GiCoffeeCup } from "react-icons/gi";
+
 export const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   return total === 0 ? (
     <>
+    <GiCoffeeCup size={50} color="brown" />
       <Notification message="There is no feedback" />
     </>
   ) : (
